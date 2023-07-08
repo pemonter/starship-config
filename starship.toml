@@ -1,0 +1,29 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$nodejs\
+$cmd_duration$time\
+$line_break\
+$character"""
+
+[git_branch]
+symbol = ' '
+
+[fill]
+symbol = " "
+
+[cmd_duration]
+min_time = 500
+format = 'took ⏳ [$duration ](bold yellow)'
+
+[time]
+disabled = false
+format = 'at 🕙 [$time]($style) '
+time_format = '%T'
+style = 'bold white'
